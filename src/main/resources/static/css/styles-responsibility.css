@@ -1,5 +1,6 @@
-h1 {
-
+body {
+    font-family: "Goudy Old Style";
+    font-size: 160%;
 }
 
 .section-frame {
@@ -8,9 +9,20 @@ h1 {
     margin:40px;
 }
 
+#button-area {
+    display: flex;
+    justify-content: space-around;
+}
+
 .selection-element-frame {
     border: 3px solid lightgreen;
-    padding: 10px 15px;
-    margin:20px;
+    padding: 10px 20px;
+    margin:40px;
+    font-size: 130%;
+}
 
+#wot-area {
+
+    width: 100%;
+    height: 100%;
 }

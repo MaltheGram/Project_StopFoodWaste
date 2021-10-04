@@ -11,50 +11,40 @@
     <h1>Who Is Responsible?</h1></div>
 
 <div class="section-frame">
-    <div class="selection-element-frame">
-        <div class="Politicians"></div>
-        <p>Some text about politicians responsibility here</p>
-    </div>
-    <div class="selection-element-frame">
-        <div class="Corporations"></div>
-            <p>Some text about corporate responsibility here</p>
-    </div>
-    <div class="selection-element-frame">
-        <div class="Consumers"></div>
-            <p>Some text about consumer responsibility here</p>
-    </div>
-
-
-    <p id="text-snippet-politicians">
-        <input type="file" name="politician-file"
-               id="politician-text"><br>
-
-    <pre id="output"></pre>
-
-    <script type="text/javascript">
-        document.getElementById('politician-file')
-            .addEventListener('change', function() {
-
-                var fr=new FileReader();
-                fr.onload=function(){
-                    document.getElementById('output')
-                        .textContent=fr.result;
-                }
-
-                fr.readAsText(this.files[0]);
-            })
-    </script>
-    </p>
-
-    <p id="text-snippet-corporations">
-
+    <p id="summary-text">
+        2-3 line summary about what's on this page...Manufacturers, Retail, Consumers share responsibility for massive food waste etc etc etc.
 
     </p>
+</div>
 
-    <p id="text-snippet-consumers">
+<div class="section-frame">
+    <div id="button-area">
+        <div class="selection-element-frame">
+            <div class="Politicians"></div>
+            <p>Politicians</p>
+        </div>
+        <div class="selection-element-frame">
+            <div class="Corporations"></div>
+                <p>Businesses</p>
+        </div>
+        <div class="selection-element-frame">
+            <div class="Consumers"></div>
+                <p>Consumers</p>
+        </div>
+    </div>
 
-    </p>
+    <div id="wot-area">
+        <p id="text-snippet-politicians">
+            <embed type="text/html" src="politician.html">
+        </p>
+        <p id="text-snippet-corporations">
+            <embed type="text/html" src="corporation.html">
+        </p>
 
+        <p id="text-snippet-consumers">
+            <embed type="text/html" src="consumer.html">
+        </p>
+    </div>
 </div>
 
 <div class="section-frame">
