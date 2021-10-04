@@ -12,6 +12,7 @@
 
 .box a{
     margin-left: 150px;
+    margin-right: auto;
     margin-top: 10px;
     text-align: center;
     display: inline-block;
@@ -19,20 +20,19 @@
     padding: 15px 30px;
     border: 1px solid green;
     width: 150px;
-    height: 150px;
+    height: 40px;
     text-decoration: none;
-    color: green;
+    color: lightskyblue;
 
 }
 
 .footer {
     text-align: center;
-    color: lightskyblue;
     border: 8px solid green;
     margin: 0;
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 98%;
     height: 10%;
 
 
