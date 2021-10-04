@@ -11,20 +11,58 @@
     <h1>Who Is Responsible?</h1></div>
 
 <div class="section-frame">
-        <div class="selection-element-frame">
-            <div class="Politicians"></div>
-            <p>Some text about politicians responsibility here</p>
-        </div>
-        <div class="selection-element-frame">
-            <div class="Corporations"></div>
-                <p>Some text about corporate responsibility here</p>
-        </div>
-        <div class="selection-element-frame">
-            <div class="Consumers"></div>
-                <p>Some text about consumer responsibility here</p>
-        </div>
+    <div class="selection-element-frame">
+        <div class="Politicians"></div>
+        <p>Some text about politicians responsibility here</p>
+    </div>
+    <div class="selection-element-frame">
+        <div class="Corporations"></div>
+            <p>Some text about corporate responsibility here</p>
+    </div>
+    <div class="selection-element-frame">
+        <div class="Consumers"></div>
+            <p>Some text about consumer responsibility here</p>
     </div>
 
+
+    <p id="text-snippet-politicians">
+        <input type="file" name="politician-file"
+               id="politician-text"><br>
+
+    <pre id="output"></pre>
+
+    <script type="text/javascript">
+        document.getElementById('politician-file')
+            .addEventListener('change', function() {
+
+                var fr=new FileReader();
+                fr.onload=function(){
+                    document.getElementById('output')
+                        .textContent=fr.result;
+                }
+
+                fr.readAsText(this.files[0]);
+            })
+    </script>
+    </p>
+
+    <p id="text-snippet-corporations">
+
+
+    </p>
+
+    <p id="text-snippet-consumers">
+
+    </p>
+
+</div>
+
+<div class="section-frame">
+    <div class="link">
+        <p>Research sources:</p>
+        <a href="https://journals.sagepub.com/doi/10.1177/0308518X17694030">SAGE journals</a>
+    </div>
+</div>
 
 </body>
 
