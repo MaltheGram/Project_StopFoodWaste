@@ -1,0 +1,15 @@
+.title{
+    text-align: center;
+}
+
+.info-box{
+    margin-left: 200px;
+    display: inline-block;
+    background: red;
+    padding: 25px 40px;
+    border: 1px solid green;
+    width: 200px;
+    height: 200px
+}
+
+
