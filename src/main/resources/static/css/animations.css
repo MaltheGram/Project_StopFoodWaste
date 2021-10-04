@@ -16,6 +16,7 @@
     animation-name: small-big;
     animation-duration: 2s;
     animation-iteration-count: 1;
+    transition: all ease-in-out;
 
 }
 
