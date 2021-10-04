@@ -1,28 +1,11 @@
 
 .title{
     text-align: center;
+    font-size: 72px;
 }
 
 .box{
     margin-left: 150px;
-    display: inline-block;
-    background: yellow;
-    padding: 15px 30px;
-    border: 1px solid green;
-    width: 200px;
-    height: 200px;
-}
-.box-under{
-    margin-left: 350px;
-    display: inline-block;
-    background: yellow;
-    padding: 15px 30px;
-    border: 1px solid green;
-    width: 200px;
-    height: 200px;
-}
-.box-under2{
-    margin-right: 350px;
     display: inline-block;
     background: yellow;
     padding: 15px 30px;
