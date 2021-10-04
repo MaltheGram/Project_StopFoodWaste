@@ -1,49 +1,63 @@
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html>
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../static/css/styles-responsibility.css"/>
     <title></title>
+    <script>
+        function doStuff() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'politician.html', true);
+            xhr.onreadystatechange = function () {
+                if (this.readyState !== 4) return;
+                if (this.status !== 200) return; // or whatever error handling you want
+                document.getElementById('text-snippet-politicians').innerHTML = this.responseText;
+            };
+            xhr.send();
+        }
+    </script>
 </head>
 
-<body>
+<body onload="doStuff()">
 <div class="section-frame">
-    <h1>Who Is Responsible?</h1></div>
+    <h1>Who Is Responsible?</h1>
+</div>
 
 <div class="section-frame">
     <p id="summary-text">
-        2-3 line summary about what's on this page...Manufacturers, Retail, Consumers share responsibility for massive food waste etc etc etc.
-
+        2-3 line summary about what's on this page...Manufacturers, Retail, Consumers share responsibility for massive
+        food waste etc etc etc.
     </p>
 </div>
 
 <div class="section-frame">
     <div id="button-area">
+
         <div class="selection-element-frame">
             <div class="Politicians"></div>
             <p>Politicians</p>
         </div>
         <div class="selection-element-frame">
             <div class="Corporations"></div>
-                <p>Businesses</p>
+            <p>Businesses</p>
         </div>
         <div class="selection-element-frame">
             <div class="Consumers"></div>
-                <p>Consumers</p>
+            <p>Consumers</p>
         </div>
     </div>
 
     <div id="wot-area">
-        <p id="text-snippet-politicians">
-            <embed type="text/html" src="politician.html">
-        </p>
-        <p id="text-snippet-corporations">
-            <embed type="text/html" src="corporation.html">
-        </p>
 
-        <p id="text-snippet-consumers">
-            <embed type="text/html" src="consumer.html">
-        </p>
+        <div id="text-snippet-politicians">
+
+        </div>
+        <div id="text-snippet-corporations">
+
+        </div>
+
+        <div id="text-snippet-consumers">
+
+        </div>
     </div>
 </div>
 
