@@ -12,6 +12,11 @@ public class htmlController {
     public String info(){
         return "info";
     }
+    @GetMapping("/text.html")
+    public String text(){
+        return "text";
+    }
+
 
     @GetMapping("/responsibility")
     public String responsibility(){
