@@ -10,9 +10,12 @@
 }
 
 
+.box{
+    margin: 0 auto;
+    width: 1000px;
+}
+
 .box a{
-    margin-left: 150px;
-    margin-right: auto;
     margin-top: 10px;
     text-align: center;
     display: inline-block;
@@ -24,6 +27,14 @@
     text-decoration: none;
     color: lightskyblue;
 
+}
+.row2, .row1{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+#box-border{
+    border: 8px solid green;
 }
 
 .footer {
