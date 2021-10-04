@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" th:href="@{/css/styles.css}"/>
+    <link rel="stylesheet" th:href="@{/css/animations.css}"/>
     <title>Stop food waste</title>
 
 </head>
@@ -12,7 +13,7 @@
 <body>
     <header>
         <div>
-            <h1 class="title">Stop food waste</h1>
+            <h1 class="title" id="small-big">Stop food waste</h1>
 
 
         </div>
@@ -20,6 +21,7 @@
     </header>
 
     <main>
+
         <div class="box">
         <a th:href="@{info}">Info page</a>
         <a th:href="@{responsibility}">Responsibility page</a>
@@ -32,7 +34,15 @@
 
     <footer>
 
-
+    <div class="footer">
+        <div class="footer-text">
+            Author: <a href="https://github.com/MaltheGram" target="_blank">Malthe Gram</a>,
+            <a href="https://github.com/simongr3dal" target="_blank">Simon Gredal</a>,
+            <a href="https://github.com/SirMeows" target="_blank">Mari Helena Engelund</a>,
+            <a href="https://github.com/Frederikmahipal" target="_blank">Frederik Vilhelmsen</a>
+            <p>Click on an author to visit their GitHub page</p>
+        </div>
+    </div>
     </footer>
 
 

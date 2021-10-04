@@ -1,20 +1,44 @@
 
-.title {
+
+.title{
     text-align: center;
     font-size: 72px;
     border: 8px solid green;
+    margin-top: 0;
+
+
 }
+
 
 .box a{
     margin-left: 150px;
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
     display: inline-block;
     background: yellow;
     padding: 15px 30px;
     border: 1px solid green;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+    text-decoration: none;
+    color: green;
+
+}
+
+.footer {
+    text-align: center;
+    color: lightskyblue;
+    border: 8px solid green;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+
+
+}
+.footer-text a{
+    color: lightskyblue;
     text-decoration: none;
 
 }
