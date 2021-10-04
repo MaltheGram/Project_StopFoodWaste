@@ -1,47 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" th:href="@{/css/styles.css}"/>
-    <title>Stop food waste</title>
+    <link rel="stylesheet" th:href="@{/css/animations.css}"/>
 
+<head th:fragment="meta-link">
+
+    <title>Stop food waste</title>
 </head>
 
 
 
 <body>
     <header>
-        <h1 class="title">Stop food waste</h1>
+        <div>
+            <h1 class="title" id="small-big">Stop food waste</h1>
+
+
+        </div>
+
     </header>
 
     <main>
-
-       <p class="box">
-            info
-        </p>
-
-        <p class="box">
-            ansvar
-        </p>
-
-        <p class="box">
-            hvad gør vi
-        </p>
-
-        <p class="box-under">
-            profilr
-        </p>
-
-        <p class="box-under2">
-            billde
-        </p>
+        <div class="box">
+            <a th:href="@{info}">Info page</a>
+            <a th:href="@{responsibility}">Responsibility page</a>
+            <a th:href="@{what_we_do}">What we do</a>
+            <a th:href="@{profile}">Profile</a>
+            <a th:href="@{#}">Picture to come</a>
+        </div>
 
 
     </main>
 
     <footer>
 
-
+    <div class="footer">
+        <div class="footer-text">
+            Author: <a href="https://github.com/MaltheGram" target="_blank">Malthe Gram</a>,
+            <a href="https://github.com/simongr3dal" target="_blank">Simon Gredal</a>,
+            <a href="https://github.com/SirMeows" target="_blank">Mari Helena Engelund</a>,
+            <a href="https://github.com/Frederikmahipal" target="_blank">Frederik Vilhelmsen</a>
+            <p>Click on an author to visit their GitHub page</p>
+        </div>
+    </div>
     </footer>
 
 

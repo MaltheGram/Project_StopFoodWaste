@@ -1,32 +1,44 @@
 
+
 .title{
     text-align: center;
+    font-size: 72px;
+    border: 8px solid green;
+    margin-top: 0;
+
+
 }
 
-.box{
+
+.box a{
     margin-left: 150px;
+    margin-right: auto;
+    margin-top: 10px;
+    text-align: center;
     display: inline-block;
     background: yellow;
     padding: 15px 30px;
     border: 1px solid green;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 40px;
+    text-decoration: none;
+    color: lightskyblue;
+
 }
-.box-under{
-    margin-left: 350px;
-    display: inline-block;
-    background: yellow;
-    padding: 15px 30px;
-    border: 1px solid green;
-    width: 200px;
-    height: 200px;
+
+.footer {
+    text-align: center;
+    border: 8px solid green;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    width: 98%;
+    height: 10%;
+
+
 }
-.box-under2{
-    margin-right: 350px;
-    display: inline-block;
-    background: yellow;
-    padding: 15px 30px;
-    border: 1px solid green;
-    width: 200px;
-    height: 200px;
+.footer-text a{
+    color: lightskyblue;
+    text-decoration: none;
+
 }
