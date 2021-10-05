@@ -30,6 +30,10 @@ public class htmlController {
     public String profile(){
         return "profile";
     }
+    @GetMapping("/credits")
+    public String credits(){
+        return "credits";
+    }
 
 
 
