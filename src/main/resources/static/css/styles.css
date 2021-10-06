@@ -1,6 +1,14 @@
+/*
+ * @author Malthe
+ * 06/10/2021 18.08
+ *
+ * Project_Foodwaste
+ *
+ */
+
 
 :root {
-    --border-color: solid green;
+    --border-color: #008000FF;
     --primary-text-color: #87CEFAFF;
 }
 
@@ -9,7 +17,7 @@ body{
 }
 
 .title{
-    border: 8px var(--border-color);
+    border: 8px solid var(--border-color);
     color: var(--primary-text-color);
     font-weight: bold;
     text-align: center;
@@ -70,13 +78,14 @@ body{
 
 .footer {
     text-align: center;
-    border: 8px var(--border-color);
+    border: 8px solid var(--border-color);
     margin: 0;
     position: absolute;
     width: 100%;
     box-sizing: border-box;
     bottom: 0;
     height: 10%;
+    font-weight: bold;
 
 
 
@@ -112,3 +121,9 @@ nav a::before{
 nav a:hover::before{
     width: 100%;
 }
+
+div iframe{
+    height: auto;
+    width: 100%;
+}
+

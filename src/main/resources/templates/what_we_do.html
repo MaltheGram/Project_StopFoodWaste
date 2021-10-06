@@ -1,10 +1,45 @@
+<!--
+  ~ @author Malthe
+  ~ 06/10/2021 20.10
+  ~
+  ~ Project_Foodwaste
+  ~
+  -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/css/navigations.css}"/>
+    <link rel="stylesheet" th:href="@{/css/animations.css}"/>
+<head th:fragment="meta-link">
+
+    <title>What we do</title>
 </head>
+
 <body>
+
+<header>
+    <div class="navbar">
+        <nav>
+            <div class="navbar-text">
+                <a th:href="@{index}">Front page</a>
+                <a th:href="@{info}">Info page</a>
+                <a th:href="@{responsibility}">Responsibility page</a>
+                <a th:href="@{profile}">Profile page</a>
+            </div>
+        </nav>
+    </div>
+
+</header>
+
+<main>
+
+</main>
+
+<footer>
+
+</footer>
 
 </body>
 </html>
