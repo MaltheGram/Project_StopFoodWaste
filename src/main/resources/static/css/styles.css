@@ -6,7 +6,6 @@
 
 body{
     margin: 0;
-
 }
 
 .title{
@@ -26,7 +25,7 @@ body{
 
 }
 .box a{
-    margin-top: 10 px;
+    margin-top: 10px;
     text-align: center;
     display: inline-block;
     background: yellow;
@@ -40,10 +39,16 @@ body{
     border-radius: 5em;
 
 }
+
+.box a:hover {
+    color: #000;
+}
+
 .row2, .row1{
     display:flex;
     justify-content: space-evenly;
 }
+
 
 #box-border {
     border: 8px var(--border-color);
@@ -68,7 +73,8 @@ body{
     border: 8px var(--border-color);
     margin: 0;
     position: absolute;
-    width: 99%;
+    width: 100%;
+    box-sizing: border-box;
     bottom: 0;
     height: 10%;
 
@@ -84,6 +90,8 @@ body{
     position: relative;
 
 }
+
+
 nav a:hover{
     color: #000;
 }

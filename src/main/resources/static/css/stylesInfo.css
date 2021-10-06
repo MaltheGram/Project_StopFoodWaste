@@ -1,15 +1,26 @@
 .title{
     text-align: center;
+    background: rgb(10, 180, 0);
+    padding: 25px 30px;
 }
 
 .info-box{
-    margin-left: 200px;
-    display: inline-block;
-    background: red;
-    padding: 25px 40px;
-    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    background: rgb(10, 180, 0);
+    padding: 20px 40px;
     width: 200px;
-    height: 200px
+    height: 260px;
 }
+
+.info-box-facts{
+    margin-top: 10px;
+    display: inline-block;
+    background: rgb(10, 180, 0);
+    padding: 25px 40px;
+    width: 1300px;
+    height: 100px;
+}
+
 
 

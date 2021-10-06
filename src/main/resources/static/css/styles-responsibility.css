@@ -1,12 +1,18 @@
 body {
     font-family: "Goudy Old Style";
     font-size: 160%;
+    background-color: #DDF0D2;
+}
+
+h1 {
+    text-align: center;
 }
 
 .section-frame {
     border: 6px solid forestgreen;
     padding: 15px 30px;
     margin:40px;
+    background-color: white;
 }
 
 #button-area {
