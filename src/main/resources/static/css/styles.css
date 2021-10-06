@@ -1,9 +1,12 @@
 
+body{
+    margin: 0;
 
+}
 .title{
-    text-align: center;
-    font-size: 72px;
     border: 8px solid green;
+    height: 65px;
+    width: 100%;
     margin-top: 0;
 }
 
@@ -47,6 +50,7 @@
     height: 10%;
 
 
+
 }
 .footer-text a{
     display: inline-block;
@@ -70,6 +74,7 @@ nav a::before{
     position: absolute;
     bottom: -5px;
     transition: all ease-in-out 250ms;
+
 
 }
 

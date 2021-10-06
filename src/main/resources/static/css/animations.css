@@ -9,14 +9,13 @@
     60% {font-size: 50px}
     70% {font-size: 55px}
     80% {font-size: 60px}
-    90% {font-size: 65px}
-    100% {font-size: 72px}
+    90% {font-size: 60px}
+    100% {font-size: 60px}
 }
 #small-big{
     animation-name: small-big;
     animation-duration: 2s;
     animation-iteration-count: 1;
-    transition: all ease-in-out;
 
 }
 
