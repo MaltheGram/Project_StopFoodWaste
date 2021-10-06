@@ -1,32 +1,43 @@
 
+:root {
+    --border-color: solid green;
+    --primary-text-color: #87CEFAFF;
+}
+
 body{
     margin: 0;
 
 }
+
 .title{
-    border: 8px solid green;
-    height: 65px;
-    width: 100%;
+    border: 8px var(--border-color);
+    color: var(--primary-text-color);
+    font-weight: bold;
+    text-align: center;
+    font-size: 72px;
     margin-top: 0;
 }
 
 
-.box{
+.box {
     margin: 0 auto;
     width: 1000px;
-}
+    padding: 30px 30px;
 
+}
 .box a{
-    margin-top: 10px;
+    margin-top: 10 px;
     text-align: center;
     display: inline-block;
     background: yellow;
-    padding: 15px 30px;
-    border: 1px solid green;
+    padding: 30px 30px;
+    border: 1px var(--border-color);
     width: 150px;
     height: 40px;
     text-decoration: none;
-    color: lightskyblue;
+    font-weight: bold;
+    color: var(--primary-text-color);
+    border-radius: 5em;
 
 }
 .row2, .row1{
@@ -34,19 +45,31 @@ body{
     justify-content: space-evenly;
 }
 
-#box-border{
-    border: 8px solid green;
-    margin: 0 auto;
-    overflow: hidden;
+#box-border {
+    border: 8px var(--border-color);
+    margin: 0;
+    padding: 0;
+    height: auto;
+
+
 }
+
+.box-border {
+    border: 8px var(--border-color);
+    margin: 0;
+    padding: 0;
+    height: auto;
+
+}
+
 
 .footer {
     text-align: center;
-    border: 8px solid green;
+    border: 8px var(--border-color);
     margin: 0;
     position: absolute;
+    width: 99%;
     bottom: 0;
-    width: 98%;
     height: 10%;
 
 
@@ -57,7 +80,7 @@ body{
     margin-left: 75px;
     padding-top: 5px;
     text-decoration: none;
-    color: lightskyblue;
+    color: var(--primary-text-color);
     position: relative;
 
 }
