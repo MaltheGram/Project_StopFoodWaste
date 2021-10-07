@@ -1,0 +1,64 @@
+/*!
+ * @author Malthe
+ * 07/10/2021 10.44
+ *
+ * Project_Foodwaste
+ *
+ */
+
+:root {
+    --border-color: #5bba6fff;
+    --primary-text-color: #054a29ff;
+}
+
+.petition, .campaigns, .statistic{
+    border: 8px solid var(--border-color);
+    border-radius: 1.5em;
+    width: 33%;
+    height: 83vh;
+    text-align: center;
+
+}
+
+.petition {
+    margin-top: 100px;
+    margin-left: 10px;
+    display: inline-block;
+    background-color: yellow;
+
+}
+
+.statistic{
+    margin-top: 100px;
+    margin-left: 90px;
+    margin-right: 10px;
+    background-color: yellow;
+}
+.statistic ul{
+    text-align: center;
+}
+.statistic li{
+    display: inline-block;
+}
+
+.campaigns{
+    margin-top: 100px;
+    margin-left: 90px;
+    background-color: yellow;
+
+}
+
+.box-border {
+    border: 8px solid var(--border-color);
+    margin: 0px 0 10px 0;
+    padding: 0;
+    height: auto;
+
+}
+
+.row1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
