@@ -63,8 +63,6 @@ body{
     margin: 0;
     padding: 0;
     height: auto;
-
-
 }
 
 .box-border {
@@ -75,19 +73,15 @@ body{
 
 }
 
-
 .footer {
     text-align: center;
     border: 8px solid var(--border-color);
     margin: 10px 0 0 0;
-    position: absolute;
     width: 100%;
     box-sizing: border-box;
     bottom: 0;
     height: 120px;
     font-weight: bold;
-
-
 
 }
 .footer-text a{
@@ -103,74 +97,64 @@ body{
     margin-left: 110px;
 }
 
-.navbar {
-    text-align: center;
-    border: 8px solid var(--border-color);
-    margin: 0;
-    position: absolute;
-    width: 100%;
-    box-sizing: border-box;
-    top: 0.1%;
-    height: 10%;
-    font-weight: bold;
 
-
-
-}
-.navbar-text a{
-    display: inline-block;
-    margin-left: 75px;
-    padding-top: 20px;
-    text-decoration: none;
-    color: var(--primary-text-color);
-    position: relative;
-
-}
-
-nav a:hover{
-    color: #000;
-}
-
-nav a::before{
-    content: " ";
-    display: block;
-    height: 5px;
-    width: 0;
-    background-color: #444;
-    position: absolute;
-    bottom: -5px;
-    transition: all ease-in-out 250ms;
-
-
-}
-
-nav a:hover::before{
-    width: 100%;
-}
-
-nav a:hover{
-    color: #000;
-}
-
-nav a::before{
-    content: " ";
-    display: block;
-    height: 5px;
-    width: 0;
-    background-color: #444;
-    position: absolute;
-    bottom: -5px;
-    transition: all ease-in-out 250ms;
-
-
-}
-
-nav a:hover::before{
-    width: 100%;
-}
 
 div iframe{
     height: auto;
+    width: 100%;
+}
+
+/* Constrain width*/
+.centering-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    width: 100%;
+    max-width: 1000px;
+    padding: 5px;
+    margin: auto;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    width: 100%;
+
+    background-color: var(--border-color);
+    border-radius: 20px;
+}
+
+.navbar-text {
+    display: block;
+    padding: 1em;
+    font-size: 24px;
+}
+
+.navbar-text:hover{
+    background-color: hsla(0, 100%, 0%, 0.1);
+}
+
+.navbar-text a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+.navbar-text a::before{
+    content: " ";
+    display: block;
+    height: 5px;
+    width: 0;
+    background-color: #444;
+    position: absolute;
+    bottom: -5px;
+    transition: all ease-in-out 250ms;
+}
+
+.navbar-text a:hover::before{
     width: 100%;
 }
 

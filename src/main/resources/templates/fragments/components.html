@@ -1,27 +1,38 @@
-Wo<html>
-    <head th:fragment="head">
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+<head th:fragment="head(title, links)">
 
-        <!-- Our CSS -->
-        <link rel="stylesheet" th:href="@{/css/styles.css}"/>
-    </head>
+    <title th:replace="${title}"></title>
 
-    <body>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <header th:fragment="navbar">
-        <div class="navbar">
-            <nav>
-                <div class="navbar-text">
-                    <a th:href="@{index}">Front page</a>
-                    <a th:href="@{info}">Info page</a>
-                    <a th:href="@{responsibility}">Responsibility page</a>
-                    <a th:href="@{profile}">Profile page</a>
-                </div>
-            </nav>
+    <!-- Our CSS -->
+    <link rel="stylesheet" th:href="@{/css/styles.css}"/>
+
+    <!-- placeholder for additional links -->
+    <th:block th:replace="${links}" />
+</head>
+
+<body>
+
+<div class="navbar" th:fragment="navbar">
+        <div class="navbar-text">
+            <a th:href="@{index}">Front page</a>
         </div>
-    </header>
 
-    </body>
+        <div class="navbar-text">
+            <a th:href="@{info}">Info page</a>
+        </div>
+
+        <div class="navbar-text">
+            <a th:href="@{responsibility}">Responsibility page</a>
+        </div>
+
+        <div class="navbar-text">
+            <a th:href="@{profile}">Profile page</a>
+        </div>
+</div>
+
+</body>
 </html>
