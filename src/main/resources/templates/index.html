@@ -15,7 +15,8 @@
 </head>
 
 <body class="centering-container">
-<div class="navbar" th:replace="fragments/components :: navbar"></div>
+
+<div th:insert="fragments/components :: navbar"></div>
 
 <main>
     <div class="box-border">
@@ -39,27 +40,7 @@
 </main>
 
 
-<footer>
-    <div class="footer">
-        <nav>
-            <div class="footer-text">
-                Author: <a href="https://github.com/MaltheGram" target="_blank">Malthe Gram</a>
-                <a href="https://github.com/simongr3dal" target="_blank">Simon Gredal</a>
-                <a href="https://github.com/SirMeows" target="_blank">Mari Helena Engelund</a>
-                <a href="https://github.com/Frederikmahipal" target="_blank">Frederik Vilhelmsen</a>
-                <p>Click on an author to visit their GitHub page</p>
-                <div class="author-contact">
-                    <p>Contact an author:<a href="mailto:malthegram22@gmail.com">Malthe Gram</a>
-                        <a href="mailto:simo95i9@stud.kea.dk">Simon Gredal</a>
-                        <a href="mailto:mari94px@stud.kea.dk">Mari Helena Engelund</a>
-                        <a href="mailto:fred88n5@stud.kea.dk">Frederik Vilhelmsen</a></p>
-                </div>
-
-            </div>
-        </nav>
-    </div>
-</footer>
-
+<div th:insert="fragments/components :: footer"></div>
 
 </body>
 </html>
