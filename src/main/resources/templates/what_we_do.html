@@ -10,28 +10,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" th:href="@{/css/navigations.css}"/>
+    <link rel="stylesheet" th:href="@{/css/styles.css}"/>
     <link rel="stylesheet" th:href="@{/css/what_we_do.css}"/>
 <head th:fragment="meta-link">
 
     <title>What we do</title>
 </head>
 
-<body>
+<body class="centering-container">
+<div class="navbar" th:replace="fragments/components :: navbar"></div>
 
-<header>
-    <div class="navbar">
-        <nav>
-            <div class="navbar-text">
-                <a th:href="@{index}">Front page</a>
-                <a th:href="@{info}">Info page</a>
-                <a th:href="@{responsibility}">Responsibility page</a>
-                <a th:href="@{profile}">Profile page</a>
-            </div>
-        </nav>
-    </div>
-
-</header>
 
 <main>
 
@@ -41,12 +29,16 @@
             <div class="campaigns">Campaign here</div>
 
             <div class="statistic">Statistics here
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                </ul>
+               <div class="parent">
+                    <ul>
+                        <li>In the US, food waste is estimated at between 30-40 percent of the food supply
+                            <a th:href="@{https://www.usda.gov/foodwaste/faqs}"><sup>1</sup></a>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+
+                </div>
             </div>
         </div>
     </div>

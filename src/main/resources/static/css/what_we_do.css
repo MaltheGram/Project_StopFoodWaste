@@ -15,8 +15,9 @@
     border: 8px solid var(--border-color);
     border-radius: 1.5em;
     width: 33%;
-    height: 83vh;
+    height: 72vh;
     text-align: center;
+    color: var(--primary-text-color);
 
 }
 
@@ -34,12 +35,21 @@
     margin-right: 10px;
     background-color: yellow;
 }
-.statistic ul{
+.statistic{
     text-align: center;
 }
-.statistic li{
-    display: inline-block;
+
+div.parent{
+    text-align: center;
 }
+.parent ul{
+    display: inline-block;
+    text-align: left;
+}
+.parent a{
+    color: blue;
+}
+
 
 .campaigns{
     margin-top: 100px;
@@ -60,5 +70,8 @@
     display: flex;
     justify-content: space-evenly;
 }
+
+
+
 
 
