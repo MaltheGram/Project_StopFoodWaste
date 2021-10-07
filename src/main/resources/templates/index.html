@@ -9,11 +9,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head th:insert="fragments/components :: head">
     <meta charset="UTF-8">
     <link rel="stylesheet" th:href="@{/css/styles.css}"/>
     <link rel="stylesheet" th:href="@{/css/animations.css}"/>
-<head th:fragment="meta-link">
 
     <title>Stop food waste</title>
 </head>
@@ -21,12 +20,7 @@
 
 
 <body>
-    <header>
-        <div>
-            <h1 class="title" id="small-big">Stop food waste</h1>
-        </div>
-
-    </header>
+    <header th:insert="fragments/components :: navbar"></header>
 
     <main>
             <div class="box-border">
