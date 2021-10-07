@@ -9,14 +9,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head th:insert="fragments/components :: head(~{::title}, ~{::link})">
+<head>
+    <th:block th:insert="fragments/components :: head" ></th:block>
     <title>Stop food waste</title>
     <link rel="stylesheet" th:href="@{/css/animations.css}"/>
 </head>
 
 <body class="centering-container">
 
-<div th:insert="fragments/components :: navbar"></div>
+<header th:replace="fragments/components :: navbar"></header>
 
 <main>
     <div class="box-border">
@@ -40,7 +41,7 @@
 </main>
 
 
-<div th:insert="fragments/components :: footer"></div>
+<footer th:replace="fragments/components :: footer"></footer>
 
 </body>
 </html>

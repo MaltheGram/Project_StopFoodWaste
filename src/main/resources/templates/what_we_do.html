@@ -9,30 +9,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" th:href="@{/css/navigations.css}"/>
-    <link rel="stylesheet" th:href="@{/css/what_we_do.css}"/>
-<head th:fragment="meta-link">
-
-    <title>What we do</title>
+    <th:block th:insert="fragments/components :: head"></th:block>
+    <title>What We Do</title>
 </head>
 
-<body>
-
-<header>
-    <div class="navbar">
-        <nav>
-            <div class="navbar-text">
-                <a th:href="@{index}">Front page</a>
-                <a th:href="@{info}">Info page</a>
-                <a th:href="@{responsibility}">Responsibility page</a>
-                <a th:href="@{profile}">Profile page</a>
-            </div>
-        </nav>
-    </div>
-
-</header>
-
+<body class="centering-container">
+<header th:replace="fragments/components :: navbar"></header>
 <main>
 
     <div class="box-border">
@@ -53,9 +35,7 @@
 
 </main>
 
-<footer>
-
-</footer>
+<footer th:replace="fragments/components :: footer"></footer>
 
 </body>
 </html>

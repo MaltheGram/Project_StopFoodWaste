@@ -1,8 +1,5 @@
 <html>
-<head th:fragment="head(title, links)">
-
-    <title th:replace="${title}"></title>
-
+<head th:fragment="head">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,8 +7,6 @@
     <!-- Our CSS -->
     <link rel="stylesheet" th:href="@{/css/styles.css}"/>
 
-    <!-- placeholder for additional links -->
-    <th:block th:replace="${links}" />
 </head>
 
 <body>
