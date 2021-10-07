@@ -9,49 +9,37 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" th:href="@{/css/styles.css}"/>
-    <link rel="stylesheet" th:href="@{/css/animations.css}"/>
-<head th:fragment="meta-link">
-
+<head th:insert="fragments/components :: head(~{::title}, ~{::link})">
     <title>Stop food waste</title>
+    <link rel="stylesheet" th:href="@{/css/animations.css}"/>
 </head>
 
+<body class="centering-container">
+<div class="navbar" th:replace="fragments/components :: navbar"></div>
 
-
-<body>
-    <header>
-        <div>
-            <h1 class="title" id="small-big">Stop food waste</h1>
+<main>
+    <div class="box-border">
+        <p style="text-align: center">
+            <iframe scrolling="no" src="text.html" frameborder="0"></iframe>
+        </p>
+    </div>
+    <div class="box-border">
+        <div class="box">
+            <div class="row1">
+                <a th:href="@{info}">Info page</a>
+                <a th:href="@{responsibility}">Responsibility page</a>
+                <a th:href="@{what_we_do}">What we do</a>
+            </div>
+            <div class="row2">
+                <a th:href="@{profile}">Profile</a>
+                <a th:href="@{#}">Picture to come</a>
+            </div>
         </div>
+    </div>
+</main>
 
-    </header>
 
-    <main>
-            <div class="box-border">
-                <p style="text-align: center">
-                   <iframe scrolling="no" src="text.html" frameborder="0"></iframe>
-                </p>
-            </div>
-            <div class="box-border">
-                <div class="box">
-                    <div class="row1">
-                        <a th:href="@{info}">Info page</a>
-                        <a th:href="@{responsibility}">Responsibility page</a>
-                        <a th:href="@{what_we_do}">What we do</a>
-                    </div>
-                    <div class="row2">
-                        <a th:href="@{profile}">Profile</a>
-                        <a th:href="@{#}">Picture to come</a>
-                    </div>
-                </div>
-            </div>
-
-    </main>
-
-    <footer>
-
+<footer>
     <div class="footer">
         <nav>
             <div class="footer-text">
@@ -61,17 +49,16 @@
                 <a href="https://github.com/Frederikmahipal" target="_blank">Frederik Vilhelmsen</a>
                 <p>Click on an author to visit their GitHub page</p>
                 <div class="author-contact">
-                <p>Contact an author:<a href="mailto:malthegram22@gmail.com">Malthe Gram</a>
-                <a href="mailto:simo95i9@stud.kea.dk">Simon Gredal</a>
-                <a href="mailto:mari94px@stud.kea.dk">Mari Helena Engelund</a>
-                    <a href="mailto:fred88n5@stud.kea.dk">Frederik Vilhelmsen</a></p>
+                    <p>Contact an author:<a href="mailto:malthegram22@gmail.com">Malthe Gram</a>
+                        <a href="mailto:simo95i9@stud.kea.dk">Simon Gredal</a>
+                        <a href="mailto:mari94px@stud.kea.dk">Mari Helena Engelund</a>
+                        <a href="mailto:fred88n5@stud.kea.dk">Frederik Vilhelmsen</a></p>
                 </div>
 
             </div>
         </nav>
     </div>
-    </footer>
-
+</footer>
 
 
 </body>
