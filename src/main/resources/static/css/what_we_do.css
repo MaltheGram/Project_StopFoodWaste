@@ -22,7 +22,7 @@
 }
 
 .petition {
-    margin-top: 100px;
+    margin-top: 10px;
     margin-left: 10px;
     display: inline-block;
     background-color: yellow;
@@ -30,11 +30,12 @@
 }
 
 .statistic{
-    margin-top: 100px;
+    margin-top: 10px;
     margin-left: 90px;
     margin-right: 10px;
     background-color: yellow;
 }
+
 .statistic{
     text-align: center;
 }
@@ -52,7 +53,7 @@ div.parent{
 
 
 .campaigns{
-    margin-top: 100px;
+    margin-top: 10px;
     margin-left: 90px;
     background-color: yellow;
 
