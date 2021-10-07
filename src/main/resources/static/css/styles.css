@@ -143,18 +143,17 @@ div iframe{
     text-decoration: none;
 }
 
-.navbar-text a::before{
+.navbar-text a::after{
     content: " ";
     display: block;
     height: 5px;
     width: 0;
     background-color: #444;
-    position: absolute;
-    bottom: -5px;
+    bottom: 5px;
     transition: all ease-in-out 250ms;
 }
 
-.navbar-text a:hover::before{
+.navbar-text a:hover::after{
     width: 100%;
 }
 
