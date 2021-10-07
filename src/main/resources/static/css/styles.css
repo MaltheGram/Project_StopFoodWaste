@@ -86,17 +86,12 @@ body{
 }
 .footer-text a{
     display: inline-block;
-    margin-left: 75px;
+    margin-left: 25px;
     padding-top: 5px;
     text-decoration: none;
     color: var(--primary-text-color);
     position: relative;
 }
-
-.author-contact a{
-    margin-left: 110px;
-}
-
 
 
 div iframe{

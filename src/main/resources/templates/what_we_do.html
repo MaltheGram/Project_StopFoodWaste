@@ -9,17 +9,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" th:href="@{/css/styles.css}"/>
-    <link rel="stylesheet" th:href="@{/css/what_we_do.css}"/>
-<head th:fragment="meta-link">
+    
 
-    <title>What we do</title>
+    <link rel="stylesheet" th:href="@{/css/what_we_do.css}"/>
+    <th:block th:insert="fragments/components :: head"></th:block>
+    <title>What We Do</title>
 </head>
 
 <body class="centering-container">
-<div class="navbar" th:replace="fragments/components :: navbar"></div>
-
+<header th:replace="fragments/components :: navbar"></header>
 
 <main>
 
@@ -45,9 +43,7 @@
 
 </main>
 
-<footer>
-
-</footer>
+<footer th:replace="fragments/components :: footer"></footer>
 
 </body>
 </html>
