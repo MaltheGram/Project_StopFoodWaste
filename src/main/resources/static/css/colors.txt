@@ -10,4 +10,5 @@ Text:
 Navigation bar:
 --dark-spring-green: #137547ff;
 
+Visual button element:
 --forest-green-traditional: #054a29ff;
