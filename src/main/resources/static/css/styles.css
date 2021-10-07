@@ -94,6 +94,26 @@ body{
 }
 
 
+.footer-text a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+.footer-text a::after{
+    content: " ";
+    display: block;
+    height: 5px;
+    width: 0;
+    background-color: #444;
+    bottom: 5px;
+    transition: all ease-in-out 250ms;
+}
+
+.footer-text a:hover::after{
+    width: 100%;
+}
+
+
 div iframe{
     height: auto;
     width: 100%;
