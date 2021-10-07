@@ -3,6 +3,7 @@ package com.example.project_foodwaste.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class htmlController {
@@ -23,6 +24,10 @@ public class htmlController {
         return "text";
     }
 
+    @GetMapping("/templates/petition_submissions")
+    public String petition(@RequestParam String fName, @RequestParam String lName){
+        return "petition_submissions";
+    }
 
     @GetMapping("/responsibility")
     public String responsibility(){

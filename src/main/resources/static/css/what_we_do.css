@@ -9,15 +9,17 @@
 :root {
     --border-color: #5bba6fff;
     --primary-text-color: #054a29ff;
+    --text-on-green: #4491B2FF;
 }
 
 .petition, .campaigns, .statistic{
-    border: 8px solid var(--border-color);
+    border: 8px solid var(--primary-text-color);
     border-radius: 1.5em;
     width: 33%;
-    height: 72vh;
+    height: 70vh;
     text-align: center;
     color: var(--primary-text-color);
+    background: var(--border-color);
 
 }
 
@@ -25,7 +27,7 @@
     margin-top: 10px;
     margin-left: 10px;
     display: inline-block;
-    background-color: yellow;
+
 
 }
 
@@ -33,7 +35,7 @@
     margin-top: 10px;
     margin-left: 90px;
     margin-right: 10px;
-    background-color: yellow;
+
 }
 
 .statistic{
@@ -55,7 +57,6 @@ div.parent{
 .campaigns{
     margin-top: 10px;
     margin-left: 90px;
-    background-color: yellow;
 
 }
 

@@ -23,7 +23,18 @@
 
     <div>
         <div class="row1">
-            <div class="petition">Petition here</div>
+            <div class="petition">Petition here
+                <form action="/templates/petition_submissions.html">
+                    <label for="fName">First name:</label><br>
+                    <input type="text" id="fName" name="fName"><br>
+                    <label for="lName">Last name:</label><br>
+                    <input type="text" id="lName" name="lName"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+
+            </div>
+
+
             <div class="campaigns">Campaign here</div>
 
             <div class="statistic">Statistics here
