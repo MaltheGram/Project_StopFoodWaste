@@ -35,11 +35,6 @@ public class htmlController {
 
 
 
-    @GetMapping("/")
-    public String index() {
-        return "index";
-    }
-
     @GetMapping("/templates/petition_submissions")
 
     public String petition(@RequestParam String fName, @RequestParam String lName) {
@@ -66,15 +61,13 @@ public class htmlController {
     @GetMapping("/credits")
     public String credits() {
         return "credits";
+    }
 
         @GetMapping("/{path}")
         public String genericTemplateReturner (@PathVariable String path){
             System.out.println(path);
-            return path;
+            return "path";
 
         }
 
-
     }
-
-}
