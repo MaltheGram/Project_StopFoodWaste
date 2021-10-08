@@ -7,19 +7,23 @@
 .info-box{
     display: flex;
     flex-direction: column;
-    background: rgb(10, 180, 0);
+    background: #5bba6fff;
     padding: 20px 40px;
-    width: 200px;
-    height: 260px;
+    --primary-text-color: #054a29ff;
+    border-radius: 25px;
+
+
 }
 
 .info-box-facts{
     margin-top: 10px;
     display: inline-block;
-    background: rgb(10, 180, 0);
+    background: #5bba6fff;
+    --primary-text-color: #054a29f;
     padding: 25px 30px;
-    width: 200px;
-    height: 100px;
+    border-radius: 25px;
+
+
 }
 
 

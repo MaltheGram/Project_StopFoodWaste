@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" th:href="@{/css/stylesInfo.css}"/>
-    <title>Title</title>
-
+    <th:block th:insert="fragments/components :: head" ></th:block>
+    <title>Stop food waste</title>
+    <link rel="stylesheet" th:href="@{/css/animations.css}"/>
 </head>
-<body>
-    <header>
-        <h1 class="title">Food waste facts</h1>
-    </header>
 
+<body class="centering-container">
+<header th:replace="fragments/components :: navbar"></header>
     <p class="info-box-facts">
         <b>Facts: </b>
 
@@ -42,6 +41,7 @@ Hotels and Restaurants: 4%<br>
 <footer>
     <p>Reference: <a href="https://stopspildafmad.org/om-madspild/madspild-i-tal/"> stopspildafmad.org </a> </p>
 </footer>
+<footer th:replace="fragments/components :: footer"></footer>
 
 </body>
 </html>
