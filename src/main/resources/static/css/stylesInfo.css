@@ -16,15 +16,23 @@
 }
 
 .info-box-facts{
-    margin-top: 10px;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     background: #5bba6fff;
     --primary-text-color: #054a29f;
-    padding: 25px 30px;
+    padding: 25px 25px;
     border-radius: 25px;
-
 
 }
 
+.Reference{
+
+    display: inline-block;
+    background: #5bba6fff;
+    --primary-text-color: #054a29f;
+    border-radius: 25px;
+    padding: 15px 10px;
+
+}
 
 
