@@ -6,7 +6,6 @@
  *
  */
 
-
 :root {
     --border-color: #5bba6fff;
     --primary-text-color: #054a29ff;
@@ -171,4 +170,3 @@ div iframe{
 .navbar-text a:hover::after{
     width: 100%;
 }
-

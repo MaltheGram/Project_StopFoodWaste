@@ -8,12 +8,12 @@
 
 package com.example.project_foodwaste.model;
 
-public class person {
+public class Person {
     private String Name;
     private long phoneNumber;
     private String email;
 
-    public person(){
+    public Person(){
     }
 
     public String getName() {

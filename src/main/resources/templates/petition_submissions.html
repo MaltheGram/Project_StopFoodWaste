@@ -5,3 +5,71 @@
   ~ Project_Foodwaste
   ~
   -->
+
+<style>
+div > p > label {
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+h1{
+    color: var(--primary-text-color);
+    border: 8px solid var(--primary-text-color);
+    border-radius: .5em;
+    width: 33%;
+    font-size: 2.5em;
+    margin-left: 10px;
+}
+header > a > img  {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10%;
+    height: 110px;
+}
+header > p {
+    display: flex;
+    position: absolute;
+    top: 15%;
+    right: 12%;
+}
+
+li {
+    display: flex;
+    margin: 0;
+    padding: 36px 0 36px 84px;
+    list-style: none;
+    background-image: url("/css/images/checkLogo.jpeg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 40px;
+}
+
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" th:href="@{/css/what_we_do.css}"/>
+    <title>Submissions for petitions</title>
+
+</head>
+<body class="centering-container">
+
+<header>
+    <p>Front page</p>
+    <a th:href="@{../index}"> <img src="/css/images/green-Home.png" alt="go to front"></a>
+
+</header>
+
+<h1>Submission for the petition against food waste:</h1>
+<div class="petition" style="background-color: white">
+    <ul class="checkLogo">
+        <li><label>Malthe Gram</label></li>
+    </ul>
+</div>
+
+
+
+</body>
+</html>

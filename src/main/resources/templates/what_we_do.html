@@ -14,21 +14,22 @@
     <link rel="stylesheet" th:href="@{/css/what_we_do.css}"/>
     <th:block th:insert="fragments/components :: head"></th:block>
     <title>What We Do</title>
+
 </head>
 
 <body class="centering-container">
 <header th:replace="fragments/components :: navbar"></header>
 
 <main>
-
     <div>
+
         <div class="row1">
             <div class="petition">Petition here
-                <form action="/templates/petition_submissions.html">
+                <form method="GET" action="/templates/petition_submissions">
                     <label for="fName">First name:</label><br>
-                    <input type="text" id="fName" name="fName"><br>
+                    <input type="text" id="fName" name="fName" value="Malthe"><br>
                     <label for="lName">Last name:</label><br>
-                    <input type="text" id="lName" name="lName"><br><br>
+                    <input type="text" id="lName" name="lName" value="Gram"><br><br>
                     <input type="submit" value="Submit">
                 </form>
 
@@ -53,6 +54,7 @@
     </div>
 
 </main>
+
 
 <footer th:replace="fragments/components :: footer"></footer>
 
