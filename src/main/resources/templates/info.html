@@ -1,47 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" th:href="@{/css/stylesInfo.css}"/>
     <th:block th:insert="fragments/components :: head" ></th:block>
     <title>Stop food waste</title>
-    <link rel="stylesheet" th:href="@{/css/animations.css}"/>
 </head>
 
 <body class="centering-container">
 <header th:replace="fragments/components :: navbar"></header>
-    <p class="info-box-facts box-border">
-        <b>Facts: </b>
+<main>
+    <div class="box-border">
+        <h3>Facts</h3>
+        <p>
+            Food waste in the Danish sector constitute 227.000 tons per year. In comparison, the total food waste from households is 261,000 tons per year.
+            The largest food waste in the service sector comes from the retail trade, which spills 163,000 tons per year, <br> corresponding to 72% of the food sector's food waste.
+            Of the retail trade's food waste, specialshops such as butchers, fish shops and greengrocers account for 12,000 tons per year. while non-specialized stores such as kiosks, grocery stores, supermarkets and department stores account for 151,000 tons per year.
+        </p>
+    </div>
 
+    <div class="box-border">
+        <h3>Yearly food waste in Denmark in %</h3>
+        <p>
+            Households: 36%<br>
+            Retail: 23%<br>
+            The food industry: 19% <br>
+            Primary production: 14%<br>
+            Institutions and commercial kitchens: 4%<br>
+            Hotels and Restaurants: 4%<br>
+        </p>
+    </div>
 
-        Food waste in the Danish sector constitute 227.000 tons per year. In comparison, the total food waste from households is 261,000 tons per year.
-        The largest food waste in the service sector comes from the retail trade, which spills 163,000 tons per year, <br> corresponding to 72% of the food sector's food waste.
-        Of the retail trade's food waste, specialshops such as butchers, fish shops and greengrocers account for 12,000 tons per year. while non-specialized stores such as kiosks, grocery stores, supermarkets and department stores account for 151,000 tons per year.
-    </p>
+    <div class="box-border">
+        <p>Reference: <a href="https://stopspildafmad.org/om-madspild/madspild-i-tal/">stopspildafmad.org</a></p>
+    </div>
+</main>
 
-    <p class="info-box box-border">
-        <b>Yearly food waste in Denmark in %:<br></b>
-
-
-Households: 36%<br>
-
-Retail: 23%<br>
-
-The food industry: 19% <br>
-
-Primary production: 14%<br>
-
-Institutions and commercial kitchens: 4%<br>
-
-Hotels and Restaurants: 4%<br>
-    </p>
-
-
-
-<footer>
-    <p class="Reference box-border ">Reference: <a href="https://stopspildafmad.org/om-madspild/madspild-i-tal/"> stopspildafmad.org </a> </p>
-</footer>
 <footer th:replace="fragments/components :: footer"></footer>
-
 </body>
 </html>
