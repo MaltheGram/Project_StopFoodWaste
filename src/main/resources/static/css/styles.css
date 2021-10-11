@@ -81,6 +81,17 @@ body{
 
 }
 
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.gallery img {
+    max-height: 10rem;
+    padding: 0.5rem;
+}
+
 .footer {
     text-align: center;
     border: 8px solid var(--border-color);
