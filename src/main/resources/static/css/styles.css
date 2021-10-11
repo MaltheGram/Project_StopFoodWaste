@@ -165,15 +165,12 @@ div iframe{
 
 .navbar-text {
     display: block;
-    padding: 1em;
     font-size: 24px;
 }
 
-.navbar-text:hover{
-    background-color: hsla(0, 100%, 0%, 0.1);
-}
-
 .navbar-text a {
+    display: block;
+    padding: 1em 0;
     color: var(--primary-text-color);
     text-decoration: none;
 }
