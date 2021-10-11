@@ -22,14 +22,14 @@ h1{
 header > a > img  {
     display: flex;
     position: absolute;
-    top: 10px;
+    top: 40px;
     right: 10%;
     height: 110px;
 }
 header > p {
     display: flex;
     position: absolute;
-    top: 15%;
+    top: 20%;
     right: 12%;
 }
 
@@ -42,6 +42,15 @@ li {
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 40px;
+}
+
+.box-border {
+    border: 8px solid var(--border-color);
+    border-radius: 1.5em;
+    margin: 40px 0 10px 0;
+    padding: 20px 40px;
+    height: auto;
+
 }
 
 </style>
@@ -62,8 +71,8 @@ li {
 
 </header>
 
-<h1>Submission for the petition against food waste:</h1>
-<div class="petition" style="background-color: white">
+<h1 class="box-border">Submission for the petition against food waste:</h1>
+<div class="petition box-border" style="background-color: white">
     <ul class="checkLogo">
         <li><label>Malthe Gram</label></li>
     </ul>
