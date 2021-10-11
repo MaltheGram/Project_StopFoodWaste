@@ -6,39 +6,19 @@
  *
  */
 
-:root {
-    --border-color: #5bba6fff;
-    --primary-text-color: #054a29ff;
-}
-
-body{
-    margin: 0;
-    background-color: #ffffff;
-}
+@import "colors.css";
 
 
-.row2, .row1{
-    margin: 10px 0 10px 0;
-    display:flex;
-    justify-content: space-evenly;
-    height: 10em;
-}
-.row{
-    margin: 10px 0 10px 0;
-    display:flex;
-    justify-content: space-evenly;
-
-}
-
-
+/* Bordered box */
 .box-border {
-    border: 8px solid var(--border-color);
+    border: 6px solid var(--border-color);
+    box-sizing: border-box;
     border-radius: 1.5em;
-    margin: 40px 0 10px 0;
-    padding: 20px 40px;
-    height: auto;
-
+    margin: 2rem 0 1rem 0;
+    padding: 1rem 2rem;
 }
+
+/* Gallery */
 
 .gallery {
     display: flex;
@@ -48,16 +28,10 @@ body{
 
 .gallery img {
     max-height: 10rem;
-    padding: 0.5rem;
+    padding: .5rem 0;
 }
 
-
-div iframe{
-    height: auto;
-    width: 100%;
-}
-
-/* Constrain width*/
+/* Constrain width */
 .centering-container {
     display: flex;
     flex-direction: column;
@@ -67,5 +41,98 @@ div iframe{
     max-width: 1000px;
     padding: 5px;
     margin: auto;
+}
+
+/* Footer */
+
+.footer {
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+
+}
+.footer-text a{
+    display: inline-block;
+    margin-left: 25px;
+    padding-top: 5px;
+    text-decoration: none;
+    color: var(--primary-text-color);
+    position: relative;
+}
+
+
+.footer-text a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+.footer-text a::after{
+    content: " ";
+    display: block;
+    height: 5px;
+    width: 0;
+    background-color: #444;
+    bottom: 5px;
+    transition: all ease-in-out 250ms;
+}
+
+.footer-text a:hover::after {
+    width: 100%;
+}
+
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 1rem;
+
+    background-color: var(--navbar-color);
+    border-radius: 20px;
+}
+
+.navbar-text {
+    flex-grow: 1;
+    text-align: center;
+}
+
+
+
+.navbar-text a {
+    display: block;
+    padding: 0.75rem 0;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: var(--navbar-text-color);
+
+    text-decoration: none;
+}
+
+.navbar-text a::before {
+    content: " ";
+    display: block;
+    height: 8px;
+}
+
+.navbar-text a::after{
+    content: " ";
+    display: block;
+    height: 4px;
+    margin-top: 4px;
+    width: 0;
+
+    background-color: var(--navbar-text-color);
+    transition: all ease-in-out 250ms;
+}
+
+.navbar-text a:hover::after{
+    width: 100%;
 }
 

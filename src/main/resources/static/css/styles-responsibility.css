@@ -1,17 +1,7 @@
-body {
-    font-family: "Goudy Old Style", serif;
-    font-size: 1.2rem;
-}
 
 h1 {
     text-align: center;
     color: var(--primary-text-color);
-}
-
-.section-frame {
-    padding: 15px 30px;
-    margin: 2rem 0;
-    background-color: white;
 }
 
 #button-area {
