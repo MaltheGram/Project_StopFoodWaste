@@ -1,3 +1,10 @@
+
+:root {
+    --border-color: #5bba6fff;
+    --primary-text-color: #054a29ff;
+}
+
+
 .title{
     text-align: center;
     background: rgb(10, 180, 0);
@@ -7,30 +14,30 @@
 .info-box{
     display: flex;
     flex-direction: column;
-    background: #5bba6fff;
     padding: 20px 40px;
-    --primary-text-color: #054a29ff;
-    border-radius: 25px;
-
+    color: var(--primary-text-color);
+    border: 8px solid var(--border-color);
+    border-radius: .5em;
 
 }
 
 .info-box-facts{
     display: flex;
     flex-direction: column;
-    background: #5bba6fff;
-    --primary-text-color: #054a29f;
+    color: var(--primary-text-color);
+    border: 8px solid var(--border-color);
     padding: 25px 25px;
-    border-radius: 25px;
+    border-radius: .5em;
 
 }
 
 .Reference{
 
-    display: inline-block;
-    background: #5bba6fff;
-    --primary-text-color: #054a29f;
-    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    color: var(--primary-text-color);
+    border: 8px solid var(--border-color);
+    border-radius: .5em;
     padding: 15px 10px;
 
 }
