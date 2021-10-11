@@ -1,6 +1,6 @@
 body {
-    font-family: "Goudy Old Style";
-    font-size: 160%;
+    font-family: "Goudy Old Style", serif;
+    font-size: 1.2rem;
     background-color: #DDF0D2;
 }
 
@@ -28,7 +28,5 @@ h1 {
 }
 
 #wot-area {
-
     width: 100%;
-
 }

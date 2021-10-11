@@ -1,79 +1,74 @@
 <html>
 <head>
-    <meta charset="UTF-8">
+    <th:block th:insert="fragments/components :: head" ></th:block>
     <link rel="stylesheet" th:href="@{css/styles-responsibility.css}"/>
-    <title></title>
+    <title>Who is Responsible</title>
     <script>
-        function doStuff() {
-            var xhr = new XMLHttpRequest();
-            xhr.open('GET', 'politician.html', true);
+        function doStuff(page) {
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', page, true);
             xhr.onreadystatechange = function () {
                 if (this.readyState !== 4) return;
                 if (this.status !== 200) return; // or whatever error handling you want
-                document.getElementById('text-snippet-politicians').innerHTML = this.responseText;
+                document.getElementById('wot-area').innerHTML = this.responseText;
             };
             xhr.send();
         }
     </script>
 </head>
 
-<body onload="doStuff()">
-<div class="section-frame">
-    <h1>Who Is Responsible?</h1>
-</div>
-
-<div class="section-frame">
-    <p id="summary-text">
-        2-3 line summary about what's on this page...Manufacturers, Retail, Consumers share responsibility for massive
-        food waste etc etc etc.
-    </p>
-</div>
-
-<div class="section-frame">
-    <div id="button-area">
-
-        <button type="button">
-            <div class="selection-element-frame">
-                <div class="Politicians"></div>
-                <p>Politicians</p>
-            </div>
-        </button>
-
-        <button type="button">
-            <div class="selection-element-frame">
-                <div class="Corporations"></div>
-                <p>Businesses</p>
-            </div>
-        </button>
-
-        <button type="button">
-            <div class="selection-element-frame">
-                <div class="Consumers"></div>
-                <p>Consumers</p>
-            </div>
-        </button>
-
-    </div>
-
-    <div id="wot-area">
-
-        <div id="text-snippet-politicians">
+<body class="centering-container">
+    <header th:replace="fragments/components :: navbar"></header>
+    <main>
+        <div class="section-frame">
+            <h1>Who Is Responsible?</h1>
         </div>
 
-        <div id="text-snippet-corporations">
+        <div class="section-frame">
+            <p id="summary-text">
+                Press a button to read more about the subject
+            </p>
         </div>
 
-        <div id="text-snippet-consumers">
-        </div>
-    </div>
-</div>
+        <div class="section-frame">
+            <div id="button-area">
 
-<div class="section-frame">
-    <div class="link">
-        <p>Research sources:</p>
-        <a href="https://journals.sagepub.com/doi/10.1177/0308518X17694030">SAGE journals</a>
-    </div>
-</div>
+                <button type="button" onclick="doStuff('politician.html')">
+                    <div class="selection-element-frame">
+                        <div class="Politicians"></div>
+                        <p>Politicians</p>
+                    </div>
+                </button>
+
+                <button type="button" onclick="doStuff('corporation.html')">
+                    <div class="selection-element-frame">
+                        <div class="Corporations"></div>
+                        <p>Businesses</p>
+                    </div>
+                </button>
+
+                <button type="button" onclick="doStuff('consumer.html')">
+                    <div class="selection-element-frame">
+                        <div class="Consumers"></div>
+                        <p>Consumers</p>
+                    </div>
+                </button>
+
+            </div>
+
+            <div id="wot-area">
+            </div>
+        </div>
+
+        <div class="section-frame">
+            <div class="link">
+                <p>Research sources:</p>
+                <a href="https://journals.sagepub.com/doi/10.1177/0308518X17694030">SAGE journals</a>
+            </div>
+        </div>
+    </main>
+
+    <footer th:replace="fragments/components :: footer"></footer>
 
 </body>
 
