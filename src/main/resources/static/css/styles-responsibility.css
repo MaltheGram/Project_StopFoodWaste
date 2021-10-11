@@ -29,3 +29,7 @@ h1 {
 #wot-area {
     width: 100%;
 }
+
+div > a {
+    color: var(--primary-text-color);
+}

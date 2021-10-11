@@ -1,63 +1,87 @@
 /*
  * @author Malthe
- * 06/10/2021 18.45
+ * 11/10/2021 13.10
  *
  * Project_Foodwaste
  *
  */
 
-:root {
-  --border-color: #5bba6fff;
-  --primary-text-color: #054a29ff;
+.footer {
+    text-align: center;
+    border: 8px solid var(--border-color);
+    margin: 10px 0 0 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 1.5em;
+    bottom: 0;
+    font-weight: bold;
+
 }
-body{
- margin: 0;
+.footer-text a{
+    display: inline-block;
+    margin-left: 25px;
+    padding-top: 5px;
+    text-decoration: none;
+    color: var(--primary-text-color);
+    position: relative;
 }
 
+
+.footer-text a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+.footer-text a::after{
+    content: " ";
+    display: block;
+    height: 5px;
+    width: 0;
+    background-color: #444;
+    bottom: 5px;
+    transition: all ease-in-out 250ms;
+}
+
+.footer-text a:hover::after {
+    width: 100%;
+}
+
+
+
+/* Navbar */
 .navbar {
-  text-align: center;
-  border: 8px solid var(--border-color);
-  margin-top: 0;
-  position: absolute;
-  width: 100%;
-  box-sizing: border-box;
-  height: 10%;
-  font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 
+    width: 100%;
 
-
-}
-.navbar-text a{
-  display: inline-block;
-  margin-left: 75px;
-  padding-top: 20px;
-  text-decoration: none;
-  color: var(--primary-text-color);
-  position: relative;
-
+    background-color: var(--border-color);
+    border-radius: 20px;
 }
 
-nav a:hover{
-  color: #000;
+.navbar-text {
+    display: block;
+    font-size: 24px;
 }
 
-nav a::before{
-  content: " ";
-  display: block;
-  height: 5px;
-  width: 0;
-  background-color: #444;
-  position: absolute;
-  bottom: -5px;
-  transition: all ease-in-out 250ms;
-
-
+.navbar-text a {
+    display: block;
+    padding: 1em 0;
+    color: var(--primary-text-color);
+    text-decoration: none;
 }
 
-nav a:hover::before{
-  width: 100%;
+.navbar-text a::after{
+    content: " ";
+    display: block;
+    height: 5px;
+    width: 0;
+    background-color: #444;
+    bottom: 5px;
+    transition: all ease-in-out 250ms;
 }
 
-
-
-
+.navbar-text a:hover::after{
+    width: 100%;
+}
