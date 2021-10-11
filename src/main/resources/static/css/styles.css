@@ -57,6 +57,13 @@ body{
     justify-content: space-evenly;
     height: 10em;
 }
+.row{
+    margin: 10px 0 10px 0;
+    display:flex;
+    justify-content: space-evenly;
+
+}
+
 
 #box-border {
     border: 8px solid var(--border-color);
