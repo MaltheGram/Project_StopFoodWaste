@@ -26,32 +26,6 @@ body{
 }
 
 
-.box {
-    margin: 0 auto;
-    width: 1000px;
-    padding: 30px 30px;
-
-}
-.box a{
-    margin-top: 10px;
-    text-align: center;
-    display: inline-block;
-    background: yellow;
-    padding: 30px 30px;
-    border: 1px solid var(--border-color);
-    width: 150px;
-    height: 40px;
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--primary-text-color);
-    border-radius: 5em;
-
-}
-
-.box a:hover {
-    color: #000;
-}
-
 .row2, .row1{
     margin: 10px 0 10px 0;
     display:flex;
@@ -75,9 +49,9 @@ body{
 
 .box-border {
     border: 8px solid var(--border-color);
-    border-radius: .5em;
+    border-radius: 1.5em;
     margin: 40px 0 10px 0;
-    padding: 0;
+    padding: 20px 40px;
     height: auto;
 
 }
