@@ -52,10 +52,11 @@ body{
 }
 
 .row2, .row1{
+    margin: 10px 0 10px 0;
     display:flex;
     justify-content: space-evenly;
+    height: 10em;
 }
-
 
 #box-border {
     border: 8px solid var(--border-color);
