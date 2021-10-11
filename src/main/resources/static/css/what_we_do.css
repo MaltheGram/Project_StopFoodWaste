@@ -6,6 +6,10 @@
  *
  */
 
+
+body{
+    background-color: #DDF0D2;
+}
 :root {
     --border-color: #5bba6fff;
     --primary-text-color: #054a29ff;
