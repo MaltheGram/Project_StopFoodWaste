@@ -15,8 +15,6 @@
 }
 
 .petition, .campaigns, .statistic{
-    border: 8px solid var(--border-color);
-    border-radius: 1.5em;
     width: 33%;
     height: 70vh;
     text-align: center;
