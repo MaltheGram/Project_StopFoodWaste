@@ -8,17 +8,17 @@
 
 
 @keyframes small-big{
-    10% {font-size: 25px}
-    15% {font-size: 28px}
-    20% {font-size: 30px}
-    30% {font-size: 35px}
-    40% {font-size: 40px}
-    50% {font-size: 45px}
-    60% {font-size: 50px}
-    70% {font-size: 55px}
-    80% {font-size: 60px}
-    90% {font-size: 65px}
-    100% {font-size: 72px}
+    10% {font-size: 0}
+    15% {font-size: 5px}
+    20% {font-size: 10px}
+    30% {font-size: 15px}
+    40% {font-size: 18px}
+    50% {font-size: 20px}
+    60% {font-size: 22px}
+    70% {font-size: 25px}
+    80% {font-size: 28px}
+    90% {font-size: 30px}
+    100% {font-size: 32px}
 }
 #small-big{
     animation-name: small-big;

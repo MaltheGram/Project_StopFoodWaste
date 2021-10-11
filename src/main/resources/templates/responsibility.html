@@ -2,6 +2,7 @@
 <head>
     <th:block th:insert="fragments/components :: head" ></th:block>
     <link rel="stylesheet" th:href="@{css/styles-responsibility.css}"/>
+    <link rel="stylesheet" th:href="@{css/animations.css}"/>
     <title>Who is Responsible</title>
     <script>
         function doStuff(page) {
@@ -21,7 +22,7 @@
     <header th:replace="fragments/components :: navbar"></header>
     <main>
         <div class="section-frame box-border">
-            <h1>Who Is Responsible?</h1>
+            <h1 id="small-big">Who Is Responsible?</h1>
         </div>
 
         <div class="section-frame box-border ">
