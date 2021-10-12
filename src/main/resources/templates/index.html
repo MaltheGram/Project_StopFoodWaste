@@ -13,24 +13,27 @@
     <th:block th:insert="fragments/components :: head" ></th:block>
     <title>Stop food waste</title>
     <link rel="stylesheet" th:href="@{/css/animations.css}"/>
+    <link rel="stylesheet" th:href="@{/css/carousel.css}"/>
 </head>
 
 <body class="centering-container">
 
 <header th:replace="fragments/components :: navbar"></header>
 
+
 <main>
     <div class="box-border" th:insert="text">
     </div>
     <div class="box-border">
-        <div class="gallery">
-            <img th:src="@{images/front-page-gallery/food_waste1.jpeg}" alt="picture1">
-            <img th:src="@{images/front-page-gallery/food_waste2.jpeg}" alt="picture2">
-            <img th:src="@{images/front-page-gallery/food_waste3.jpeg}" alt="picture3">
-            <img th:src="@{images/front-page-gallery/food_waste4.jpeg}" alt="picture4">
-            <img th:src="@{images/front-page-gallery/food_waste5.jpeg}" alt="picture5">
-        </div>
+            <div class="gallery">
+                <img th:src="@{images/front-page-gallery/food_waste1.jpeg}" alt="picture1">
+                <img th:src="@{images/front-page-gallery/food_waste2.jpeg}" alt="picture2">
+                <img th:src="@{images/front-page-gallery/food_waste3.jpeg}" alt="picture3">
+                <img th:src="@{images/front-page-gallery/food_waste4.jpeg}" alt="picture4">
+                <img th:src="@{images/front-page-gallery/food_waste5.jpeg}" alt="picture5">
+            </div>
     </div>
+
 </main>
 
 

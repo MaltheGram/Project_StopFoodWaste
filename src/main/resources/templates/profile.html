@@ -1,13 +1,26 @@
+<style>
+
+h4 > a {
+    text-decoration: none;
+    color: black;
+}
+a > bdi{
+    color: blue;
+}
+</style>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Stop food waste</title>
     <link rel="stylesheet" th:href="@{/css/animations.css}"/>
+    <link rel="stylesheet" th:href="@{/css/styles.css}"/>
 </head>
 
     <body>
         <h1 style="text-align: center">Work in progress!</h1>
-        <h4 style="text-align: center">Press the rotating home bottom, to return to the front!</h4>
+        <h4 style="text-align: center">Press the rotating home bottom, to return to the front!
+            <a href="javascript:history.back()">Or click <bdi>here</bdi> to go back previous page</a></h4>
         <a th:href="@{../index}"> <img class="spin-360" src="/css/images/green-Home.png" alt="go to front"></a>
 
         <!-- Bootstrap Bundle with Popper -->
