@@ -56,6 +56,7 @@ The gallery class is used to display the images as intended.
     padding: .5rem 0;
 }
 ```
+<hr>
 ### Comments about the "Take Action" page
 <details>
   <summary>Take Action!</summary>
@@ -132,3 +133,12 @@ row {
 
 
 
+  <hr>
+  
+  # Authors of this project:
+ 
+  - [@Malthe Gram](https://github.com/MaltheGram)
+  - [@simonGr3dal](https://github.com/simongr3dal)
+  - [@SirMeows](https://github.com/SirMeows)
+  - [@Frederikmahipal](https://github.com/Frederikmahipal)
+  
