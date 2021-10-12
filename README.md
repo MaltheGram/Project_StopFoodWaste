@@ -57,7 +57,9 @@ The gallery class is used to display the images as intended.
 }
 ```
 <hr>
+
 ### Comments about the "Take Action" page
+
 <details>
   <summary>Take Action!</summary>
   
