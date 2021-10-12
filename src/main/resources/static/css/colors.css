@@ -1,0 +1,26 @@
+:root {
+    --primary-text-color: black;
+
+
+    --navbar-text-color: white;
+    --navbar-color: #137547ff;
+
+    --border-color: #5bba6fff;
+}
+
+/*
+
+Borders:
+--emerald: #5bba6fff;
+--green-pigment: #3fa34dff;
+
+Text:
+--forest-green-web: #2a9134ff;
+
+Navigation bar:
+--dark-spring-green: #137547ff;
+
+Visual button element:
+--forest-green-traditional: #054a29ff;
+
+ */

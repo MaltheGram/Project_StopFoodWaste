@@ -9,8 +9,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-
     <th:block th:insert="fragments/components :: head"></th:block>
     <link rel="stylesheet" th:href="@{/css/what_we_do.css}"/>
     <title>What We Do</title>
@@ -21,42 +19,36 @@
 <header th:replace="fragments/components :: navbar"></header>
 
 <main>
-    <div>
+    <div class="row">
+        <div class="col box-border" >Sign up to join the campaign! Submit in the petition below
+            <form method="GET" action="/templates/petition_submissions">
+                <label for="fName">First name:</label><br>
+                <input type="text" id="fName" name="fName" value="Malthe"><br>
+                <label for="lName">Last name:</label><br>
+                <input type="text" id="lName" name="lName" value="Gram"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
 
-        <div class="row">
-            <div class="petition box-border" >Sign up to join the campaign! Submit in the petition below
-                <form method="GET" action="/templates/petition_submissions">
-                    <label for="fName">First name:</label><br>
-                    <input type="text" id="fName" name="fName" value="Malthe"><br>
-                    <label for="lName">Last name:</label><br>
-                    <input type="text" id="lName" name="lName" value="Gram"><br><br>
-                    <input type="submit" value="Submit">
-                </form>
+        <div class="col box-border">Campaign here
+            <p>
+                A few lines about the ongoing campaign to stop food waste
+            </p>
+        </div>
 
-            </div>
+        <div class="col box-border">Statistics here
+           <div class="parent">
+                <ul>
+                    <li>In the US, food waste is estimated at between 30-40 percent of the food supply
+                        <a th:href="@{https://www.usda.gov/foodwaste/faqs}"><sup>1</sup></a>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ul>
 
-
-            <div class="campaigns box-border">Campaign here
-                <p>
-                    A few lines about the ongoing campaign to stop food waste
-                </p>
-            </div>
-
-            <div class="statistic box-border">Statistics here
-               <div class="parent">
-                    <ul>
-                        <li>In the US, food waste is estimated at between 30-40 percent of the food supply
-                            <a th:href="@{https://www.usda.gov/foodwaste/faqs}"><sup>1</sup></a>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                    </ul>
-
-                </div>
             </div>
         </div>
     </div>
-
 </main>
 
 
