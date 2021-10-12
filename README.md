@@ -1,6 +1,134 @@
 # Project_StopFoodWaste
 
-In this project we've focused on conceptualizing the website, rather than the actual factual content. 
-With the use of CSS / HTML, Springboot and Thymeleaf we've established a very basic, but intuitive website. 
+<p>In this project we've focused on conceptualizing the website, rather than the actual factual content. 
+With the use of CSS / HTML, Springboot and Thymeleaf we've established a very basic, but intuitive website. </p>
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/RjemkEy" data-context="false" ><a href="//imgur.com/a/RjemkEy"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+### The folder structure can be seen below:
+
+<details>
+  <summary>Click me!</summary>
+  
+  ![Skærmbillede 2021-10-12 kl  12 04 15](https://user-images.githubusercontent.com/80412524/136940859-d23f7a95-56ea-4657-a6ae-1f941be72fcb.png)
+
+We intended to add all HTML documents filled with text to the textBlock folder. But due to some issues with Thymeleaf and the folder structure that Thymeleaf provides we let those files remain in the templates folder 
+  
+</details>
+<hr>
+
+### Features
+Features we've added:
+- A navigation bar that is shown on every page, using a thymeleaf fragment.
+- A footer with links to each authors Github and direct mail.
+- Minor animations.
+- Buttons which than reveals text.
+- An action page, in which you can sign up for a petition (WIP).
+- A genreic template controller for the controller class.
+
+Features we intended to add: 
+- A food waste tracker in which you could compare with your friends. Reason it wasn't added, was due to time.
+- A content carousel on the front page with different picutures. Reason it wasn't added, was to due to complexity and time.
+
+<hr>
+
+The front page in itself is a basic setup.
+The front page consist of said navigation bar and footer.
+
+Rest of the content is boxed in, using CSS classes.
+```CSS
+.box-border {
+    border: 6px solid var(--border-color);
+    box-sizing: border-box;
+    border-radius: 1rem;
+    margin: 2rem 0 1rem 0;
+    padding: 1rem 2rem;
+}
+```
+The gallery class is used to display the images as intended.
+```CSS
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.gallery img {
+    max-height: 10rem;
+    padding: .5rem 0;
+}
+```
+### Comments about the "Take Action" page
+<details>
+  <summary>Take Action!</summary>
+  
+Following the Gestalt Laws, this page is pretty much build up the same way as the front page, to keep the overall website consistent in form of layout and colors.
+  
+This page has 3 different colums, which is intended to keep different information.
+Using CSS, we've ensured that the site is scaleable.
+
+<details>
+  <summary>CSS here</summary>
+  
+```CSS
+row {
+    display: flex;
+    flex-direction: row;
+}
+.row > .col {
+    flex-basis: 0;
+    flex-grow: 1;
+
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+.row > :first-child { margin-left: 0; }
+.row > :last-child { margin-right: 0; }
+```
+</details>
+  
+   The HTML itself is build up using a ```<div>``` tag which is given a ```box-border``` class and ```col``` class.
+   The intention of the ```form``` was to send information from the petition to another page containing all sign ups. Due to complexity and time this has simply    been hard coded to visualize the concept. <br>
+   For now, theres just a few  ```label``` tags, which is basically just plain text. <br>
+   The ```input``` tags, is quite intuitive, they give the option to input some text. <br>
+   The ```type```tag allows the developer to choose what type of input is given. More information on forms can be found [here](https://www.w3schools.com/html/html_forms.asp).
+  
+  <details> 
+  <summary>HTML Here</summary>
+    
+  ```html
+    <div class="col box-border">Campaign here
+            <p>
+                A few lines about the ongoing campaign to stop food waste
+            </p>
+        </div>
+ 
+        <div class="col box-border" >Sign up to join the campaign! Submit in the petition below
+            <form method="GET" action="/templates/petition_submissions">
+                <label for="fName">First name:</label><br>
+                <input type="text" id="fName" name="fName" value="Malthe"><br>
+                <label for="lName">Last name:</label><br>
+                <input type="text" id="lName" name="lName" value="Gram"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    
+  ```
+    
+</details>
+  
+  
+  
+  
+  
+  
+  
+  
+
+  </details>  
+  
+
+
+
+
+
+
+
