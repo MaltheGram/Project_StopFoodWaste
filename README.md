@@ -133,10 +133,8 @@ row {
    
  <details>
      <summary>Snippit of HTML</summary>
-     
-    ```html
-   
-     <div class="box-border">
+   ```html
+   <div class="box-border">
         <h3>Yearly food waste in Denmark in %</h3>
         <p>
             Households: 36%<br>
@@ -147,14 +145,13 @@ row {
             Hotels and Restaurants: 4%<br>
         </p>
     </div>
-   
    ```
-     
-    </details>
+     </details>
     
    <details>
      <summary>Snippit of CSS</summary>
      ```CSS
+     
      .box-border {
     border: 6px solid var(--border-color);
     box-sizing: border-box;
@@ -162,9 +159,9 @@ row {
     margin: 2rem 0 1rem 0;
     padding: 1rem 2rem;
 }
-     ```
+     
    </details>
-   </details>
+   
 
   </details>  
   
