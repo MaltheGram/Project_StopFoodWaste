@@ -138,7 +138,7 @@ row {
   <hr>
   
   # Authors of this project:
- 
+  
   - [@Malthe Gram](https://github.com/MaltheGram)
   - [@simonGr3dal](https://github.com/simongr3dal)
   - [@SirMeows](https://github.com/SirMeows)
