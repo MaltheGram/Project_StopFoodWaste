@@ -72,7 +72,7 @@ Using CSS, we've ensured that the site is scaleable.
   <summary>CSS here</summary>
   
 ```CSS
-row {
+.row {
     display: flex;
     flex-direction: row;
 }
