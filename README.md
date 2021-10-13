@@ -91,7 +91,7 @@ row {
    The HTML itself is build up using a ```<div>``` tag which is given a ```box-border``` class and ```col``` class.
    The intention of the ```form``` was to send information from the petition to another page containing all sign ups. Due to complexity and time this has simply    been hard coded to visualize the concept. <br>
    For now, theres just a few  ```label``` tags, which is basically just plain text. <br>
-   The ```input``` tags, is quite intuitive, they give the option to input some text. <br>
+   The ```input``` tags, is quite intuitive, they give the option to give some input. <br>
    The ```type```tag allows the developer to choose what type of input is given. More information on forms can be found [here](https://www.w3schools.com/html/html_forms.asp).
   
   <details> 
