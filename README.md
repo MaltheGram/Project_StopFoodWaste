@@ -117,8 +117,12 @@ row {
   ```
     
 </details>
+  </details>
   <hr>
   
+  
+  
+
 ### Coments about Info Page
  <details>
     <summary>Info Page</summary>
@@ -130,7 +134,7 @@ row {
    
  <details>
      <summary>Snippit of HTML</summary>
-     ```HTML
+     ```html
      <div class="box-border">
         <h3>Yearly food waste in Denmark in %</h3>
         <p>
@@ -143,12 +147,12 @@ row {
         </p>
     </div>
      
-     ```
+    ```
   </details>
     
    <details>
      <summary>Snippit of CSS</summary>
-     ´´´CSS
+     ```CSS
      .box-border {
     border: 6px solid var(--border-color);
     box-sizing: border-box;
@@ -156,7 +160,7 @@ row {
     margin: 2rem 0 1rem 0;
     padding: 1rem 2rem;
 }
-     ```
+     ```CSS
    </details>
     </details>
      
