@@ -134,7 +134,9 @@ row {
    
  <details>
      <summary>Snippit of HTML</summary>
-     ```html
+     
+    ```html
+   
      <div class="box-border">
         <h3>Yearly food waste in Denmark in %</h3>
         <p>
@@ -145,7 +147,9 @@ row {
             Institutions and commercial kitchens: 4%<br>
             Hotels and Restaurants: 4%<br>
         </p>
-    </div>```
+    </div>
+   
+   ```
      
     </details>
     
@@ -159,9 +163,8 @@ row {
     margin: 2rem 0 1rem 0;
     padding: 1rem 2rem;
 }
-     ```CSS
+     ```
    </details>
-    </details>
      
      
   
