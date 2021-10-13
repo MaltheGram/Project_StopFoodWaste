@@ -145,10 +145,9 @@ row {
             Institutions and commercial kitchens: 4%<br>
             Hotels and Restaurants: 4%<br>
         </p>
-    </div>
+    </div>```
      
-    ```
-  </details>
+    </details>
     
    <details>
      <summary>Snippit of CSS</summary>
