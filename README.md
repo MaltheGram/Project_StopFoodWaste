@@ -128,9 +128,8 @@ row {
     <summary>Info Page</summary>
     The thoughts behind the info page was to make it simple and straight with facts therefor we have hardcoded the facts. 
     We also wanted to give the info page a simple look and layou to maintain the overall theme of this website in form of layout and colors.
-    
     In the info page the HTML is build up by 3 ```<div>``` tag, where the class ```box-border``` also has been used. 
-    
+ 
    
  <details>
      <summary>Snippit of HTML</summary>
@@ -165,13 +164,7 @@ row {
 }
      ```
    </details>
-     
-     
-  
-  
-  
-  
-  
+   </details>
 
   </details>  
   
