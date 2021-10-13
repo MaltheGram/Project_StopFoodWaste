@@ -117,7 +117,7 @@ row {
   ```
     
 </details>
-  
+  <hr>
   
 ### Coments about Info Page
  <details>
