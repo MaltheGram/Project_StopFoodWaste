@@ -132,7 +132,7 @@ row {
 <details>
     <summary>HTML and JavaScript here</summary>
     <br>
-    The JavaScript function is defined in head section of the html code. This code is adjusted from internet sources such as [this](https://www.w3schools.com/tags/ev_onclick.asp).
+    The JavaScript function is defined in ```<head>``` section of the html code. This code is adjusted from internet sources such as [this](https://www.w3schools.com/tags/ev_onclick.asp).
 
 
 ```html
