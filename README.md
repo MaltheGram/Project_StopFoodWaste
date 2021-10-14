@@ -90,9 +90,9 @@ row {
   
    The HTML itself is build up using a ```<div>``` tag which is given a ```box-border``` class and ```col``` class.
    The intention of the ```form``` was to send information from the petition to another page containing all sign ups. Due to complexity and time this has simply    been hard coded to visualize the concept. <br>
-   For now, theres just a few  ```label``` tags, which is basically just plain text. <br>
-   The ```input``` tags, is quite intuitive, they give the option to input some text. <br>
-   The ```type```tag allows the developer to choose what type of input is given. More information on forms can be found [here](https://www.w3schools.com/html/html_forms.asp).
+   For now, theres just a few  ```<label>``` tags, which is basically just plain text. <br>
+   The ```<input>``` tags, is quite intuitive, they give the option to input some text. <br>
+   The ```<type>```tag allows the developer to choose what type of input is given. More information on forms can be found [here](https://www.w3schools.com/html/html_forms.asp).
   
   <details> 
   <summary>HTML Here</summary>
@@ -197,7 +197,7 @@ The script is called in the HTML in connection with onclick event. Each button h
    
   The thoughts behind the info page was to make it simple and straight with facts therefor we have hardcoded the facts. 
     We also wanted to give the info page a simple look and layou to maintain the overall theme of this website in form of layout and colors.
-    In the info page the HTML is build up by 3 ```div``` tags, where the class ```box-border``` also has been used.   
+    In the info page the HTML is build up by 3 ```<div>``` tags, where the class ```box-border``` also has been used.   
    
  
    
