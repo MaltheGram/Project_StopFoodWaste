@@ -187,6 +187,59 @@ The script is called in the HTML in connection with onclick event. Each button h
 
 
 </details>
+  
+  <hr>
+  
+  ### Coments about Info Page
+ <details>
+    <summary>Info Page</summary>
+   
+   
+  The thoughts behind the info page was to make it simple and straight with facts therefor we have hardcoded the facts. 
+    We also wanted to give the info page a simple look and layou to maintain the overall theme of this website in form of layout and colors.
+    In the info page the HTML is build up by 3 ```div``` tags, where the class ```box-border``` also has been used.   
+   
+ 
+   
+ <details>
+     <summary>Snippit of HTML</summary>
+   
+   ```html
+   <div class="box-border">
+        <h3>Yearly food waste in Denmark in %</h3>
+        <p>
+            Households: 36%<br>
+            Retail: 23%<br>
+            The food industry: 19% <br>
+            Primary production: 14%<br>
+            Institutions and commercial kitchens: 4%<br>
+            Hotels and Restaurants: 4%<br>
+        </p>
+    </div>
+   ```
+
+   </details>
+    
+   
+   
+   <details>
+     <summary>Snippit of CSS</summary>
+    
+   ```CSS  
+     .box-border {
+    border: 6px solid var(--border-color);
+    box-sizing: border-box;
+    border-radius: 1rem;
+    margin: 2rem 0 1rem 0;
+    padding: 1rem 2rem;
+}
+     
+```
+     
+   </details>
+     
+   
+   </details>
 
 <hr>
   
