@@ -22,11 +22,11 @@ Features we've added:
 - Minor animations.
 - Buttons which than reveals text.
 - An action page, in which you can sign up for a petition (WIP).
-- A genreic template controller for the controller class.
+- A generic template controller for the controller class.
 
 Features we intended to add: 
 - A food waste tracker in which you could compare with your friends. Reason it wasn't added, was due to time.
-- A content carousel on the front page with different picutures. Reason it wasn't added, was to due to complexity and time.
+- A content carousel on the front page with different pictures. Reason it wasn't added, was to due to complexity and time.
 
 <hr>
 
@@ -65,8 +65,8 @@ The gallery class is used to display the images as intended.
   
 Following the Gestalt Laws, this page is pretty much build up the same way as the front page, to keep the overall website consistent in form of layout and colors.
   
-This page has 3 different colums, which is intended to keep different information.
-Using CSS, we've ensured that the site is scaleable.
+This page has 3 different columns, which is intended to keep different information.
+Using CSS, we've ensured that the site is scalable.
 
 <details>
   <summary>CSS here</summary>
@@ -115,27 +115,80 @@ row {
         </div>
     
   ```
-    
 </details>
-  
-  
-  
-  
-  
-  
-  
-  
-
-  </details>  
-  
-
-
-
-
-
-
-
+</details>
   <hr>
+
+
+### Comments about the "Responsibility" page
+
+<details>
+    <summary>Responsibility</summary>
+    <br>
+    The responsibility page was designed to follow the same visual pattern as the other pages, as far as it suited the content. To keep the look of the page consistent with the others, the same CSS class .box-border is used.<br>
+    The element that differs from other pages is buttons, which displays the text associated with it on the same page. Inserting content is done by using a short JavaScript segment. <br>
+    <br>
+
+<details>
+    <summary>HTML and JavaScript here</summary>
+    <br>
+    The JavaScript function is defined in head section of the html code. This code is adjusted from internet sources such as [this](https://www.w3schools.com/tags/ev_onclick.asp).
+
+
+```html
+<head>
+    <script>
+        function displayText(page) {
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', page, true);
+            xhr.onreadystatechange = function () {
+                if (this.readyState !== 4) return;
+                if (this.status !== 200) return;
+                document.getElementById('wot-area').innerHTML = this.responseText;
+            };
+            xhr.send();
+        }
+    </script>
+</head>
+```
+<br>
+The script is called in the HTML in connection with onclick event. Each button has a reference to an html document, which contains only the associated text.
+<br>
+
+```html
+            <div id="button-area">
+
+                <button type="button" onclick="displayText('politician.html')">
+                    <div class="selection-element-frame">
+                        <div class="Politicians"></div>
+                        <p>Politicians</p>
+                    </div>
+                </button>
+
+                <button type="button" onclick="displayText('corporation.html')">
+                    <div class="selection-element-frame">
+                        <div class="Corporations"></div>
+                        <p>Businesses</p>
+                    </div>
+                </button>
+
+                <button type="button" onclick="displayText('consumer.html')">
+                    <div class="selection-element-frame">
+                        <div class="Consumers"></div>
+                        <p>Consumers</p>
+                    </div>
+                </button>
+
+            </div>
+```
+
+</details>
+
+
+
+</details>
+
+<hr>
   
   # Authors of this project:
  
