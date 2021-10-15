@@ -242,7 +242,11 @@ The script is called in the HTML in connection with onclick event. Each button h
    </details>
 
 <hr>
-  
+   
+   # Experience the webiste!
+   Experiecne a [demo](https://projectfoodwaste.herokuapp.com/) of our website. It has been deployed through Heruko.  
+   
+<hr>
   # Authors of this project:
  
   - [@Malthe Gram](https://github.com/MaltheGram)
